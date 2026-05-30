@@ -13,7 +13,10 @@ st.title("🤟 SignBridge: Real-Time Sign Language Translation")
 st.markdown("قم بتشغيل الكاميرا، وانتظر ثواني حتى يتم تحميل النماذج، ثم ابدأ الإشارة!")
 
 # ⚠️ **تنبيه هام:** ضع هنا أسماء المجلدات (الكلمات) بنفس الترتيب اللي تدرب عليه الموديل
-actions = np.array(['hello', 'today', 'everyone']) # عدلها حسب الداتا تبعك
+actions = np.array(['about' 'aims' 'are' 'being' 'developing' 'everyone' 'excited' 'for'
+ 'graduation' 'hello' 'here' 'is' 'make' 'NO_Act' 'our' 'present'
+ 'project' 'sign language' 'system' 'thank' 'to' 'Today' 'we' 'which'
+ 'you']) # عدلها حسب الداتا تبعك
 
 # --- تحميل الموديلات (كاش لتسريع الويب) ---
 @st.cache_resource
