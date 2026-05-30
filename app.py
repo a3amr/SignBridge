@@ -3,10 +3,10 @@ from streamlit_webrtc import webrtc_streamer
 
 st.title("Camera Test")
 
-webrtc_streamer(
-    key="test",
+ctx = webrtc_streamer(
+    key="camera",
     media_stream_constraints={
         "video": True,
-        "audio": False
-    }
+        "audio": False,
+    },
 )
