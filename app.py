@@ -78,7 +78,7 @@ class VideoProcessor:
         self.sentence = []
         self.threshold = 0.50
         # model_complexity=0 للسرعة كما طلبت
-        self.holistic = mp_holistic.Holistic(model_complexity=0, min_detection_confidence=0.4, min_tracking_confidence=0.4)
+        self.holistic = mp_holistic.Holistic( min_detection_confidence=0.4, min_tracking_confidence=0.4)
 
     def recv(self, frame):
         img = frame.to_ndarray(format="bgr24")
